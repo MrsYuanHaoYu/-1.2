@@ -1,0 +1,82 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+//struct student
+//{
+//	char name[21];
+//	char score;
+//};//这里要加上分号
+//int main()//冒泡排序
+//{
+//	struct student a[100], t;//t当瓶子用
+//	int i, n,j;
+//	scanf("%d", &n);
+//	for (i = 0;i <n;i++)
+//	{
+//		scanf("%s %d", a[i].name, &a[i].score);
+//
+//	}
+//	for(i=0;i<n;i++)
+//		for (j = 0;j <= n - j;j++)
+//		{
+//			if (a[j].score < a[j+1].score)
+//			{
+//				//a[j].score = a[j + 1].score -a[j].score;//加上后缀名虽然能运算，但是输出的结果没有排序
+//				//a[j+1].score = a[j + 1].score- a[j].score;
+//				//a[j].score= a[j + 1].score+ a[j].score;
+//				 t= a[j+1];
+//				 a[j + 1] = a[j];
+//				 a[j] = t;
+//			}
+//		}
+//	for (i = 0;i < n;i++)
+//	{
+//		printf("%s\n", a[i].name);
+//	}
+//	system("pause");
+//	return 0;
+//}
+//快速排序
+//int main()//尝试排序错误
+//{
+//	int i,a[10],left,right,temp,t,m,n;
+//	left = 0;
+//	right = 9;
+//	for (i = 0;i < 10;i++)
+//	{
+//		scanf("%d", &a[i]);
+//	}
+//	while (1)
+//	{
+//		temp = a[left];
+//		m = left;
+//		n = right;
+//		while (m != n)
+//		{
+//			if (a[m] >= temp && m < n)
+//				m++;
+//			if (a[n] <= temp && m < n)
+//				n--;
+//			if (m < n)
+//			{
+//				t = a[n];
+//				a[n] = a[m];
+//				a[m] = t;
+//			}
+//		}
+//		left++;
+//		right--;
+//		a[left] = a[m];
+//		a[m] = temp;
+//		if (left > right)
+//		{
+//			break;
+//		}
+//	}
+//	for (i = 0;i < 10;i++)
+//	{
+//		printf("%d ", a[i]);
+//	}
+//	return 0;
+//}
